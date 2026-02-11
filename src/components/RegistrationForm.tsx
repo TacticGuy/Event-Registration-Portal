@@ -189,7 +189,6 @@ export function RegistrationForm() {
         >
           <div className="absolute inset-0 bg-gradient-to-r from-[#ff6b35]/20 to-[#ff8555]/20 rounded-3xl blur-2xl"></div>
           <div className="relative bg-[#1a1a2e]/80 backdrop-blur-sm border border-[#ff6b35]/30 rounded-3xl p-8 md:p-12">
-            <FormProgress progress={calculateProgress()} />
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <InputWithValidation
@@ -305,6 +304,7 @@ export function RegistrationForm() {
         </motion.div>
       </div>
       <SuccessDialog open={showSuccess} onClose={() => setShowSuccess(false)} />
+      <FormProgress progress={calculateProgress()} />
     </section>
   );
 }
