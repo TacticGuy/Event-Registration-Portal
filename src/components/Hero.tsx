@@ -24,12 +24,7 @@ export function Hero() {
             transition={{ delay: 0.2, type: 'spring', stiffness: 200 }}
             className="inline-block mb-8 relative"
           >
-            <div className="absolute inset-0 bg-gradient-to-r from-[#ff6b35] to-[#ff8555] rounded-full blur-2xl opacity-50 animate-pulse"></div>
-            <img
-              src="https://www.mozilla.org/media/protocol/img/logos/firefox/browser/logo.eb1324e44442.svg"
-              alt="Firefox"
-              className="h-32 w-32 mx-auto relative z-10 drop-shadow-2xl"
-            />
+            {/* Removed Firefox logo */}
           </motion.div>
           {/* Badge */}
           <motion.div
@@ -103,7 +98,7 @@ export function Hero() {
             transition={{ delay: 0.7, duration: 0.6 }}
             className="mb-12"
           >
-            <CountdownTimer targetDate="2024-03-15T10:00:00" />
+            <CountdownTimer targetDate={new Date(Date.now() + (10 * 24 * 60 * 60 * 1000) + (20 * 60 * 60 * 1000)).toISOString()} />
           </motion.div>
           {/* CTA Button */}
           <motion.button
