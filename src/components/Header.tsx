@@ -39,8 +39,8 @@ export function Header() {
           >
             <div className="relative">
               <img
-                src="https://www.mozilla.org/media/protocol/img/logos/firefox/browser/logo.eb1324e44442.svg"
-                alt="Firefox Club"
+                src="https://www.mfcvit.in/assets/logo_main-DYyPMjX9.png"
+                alt="MFC VIT Logo"
                 className="h-12 w-12 animate-float"
               />
               <div className="absolute inset-0 bg-[#ff6b35]/20 rounded-full blur-xl"></div>
