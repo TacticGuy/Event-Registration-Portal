@@ -77,22 +77,3 @@ export function RegistrationForm() {
     });
     setErrors(newErrors);
     setTouched(
-      Object.keys(formData).reduce((acc, key) => ({ ...acc, [key]: true }), {})
-    );
-    if (Object.keys(newErrors).length === 0) {
-      setShowSuccess(true);
-      setTimeout(() => {
-        setFormData({
-          fullName: '',
-          email: '',
-          phone: '',
-          college: '',
-          year: '',
-          branch: '',
-          agreeTerms: false,
-        });
-        setTouched({});
-        setErrors({});
-      }, 2000);
-    }
-  };
