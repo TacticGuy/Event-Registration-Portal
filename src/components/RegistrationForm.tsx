@@ -193,12 +193,14 @@ export function RegistrationForm() {
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <InputWithValidation
+                  key="fullName"
                   name="fullName"
                   label="Full Name"
                   placeholder="John Doe"
                   icon={User}
                 />
                 <InputWithValidation
+                  key="email"
                   name="email"
                   label="Email Address"
                   type="email"
@@ -208,6 +210,7 @@ export function RegistrationForm() {
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <InputWithValidation
+                  key="phone"
                   name="phone"
                   label="Phone Number"
                   type="tel"
@@ -215,6 +218,7 @@ export function RegistrationForm() {
                   icon={Phone}
                 />
                 <InputWithValidation
+                  key="college"
                   name="college"
                   label="College/University"
                   placeholder="VIT University"
@@ -257,6 +261,7 @@ export function RegistrationForm() {
                   )}
                 </div>
                 <InputWithValidation
+                  key="branch"
                   name="branch"
                   label="Branch/Department"
                   placeholder="Computer Science"
