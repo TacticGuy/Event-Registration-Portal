@@ -27,20 +27,15 @@ export function CountdownTimer({ targetDate }: CountdownTimerProps) {
     return () => clearInterval(timer);
   }, [targetDate]);
   const TimeBox = ({ value, label }: { value: number; label: string }) => (
-    <motion.div
-      initial={{ scale: 0 }}
-      animate={{ scale: 1 }}
-      transition={{ type: 'spring', stiffness: 200 }}
-      className="relative group"
-    >
-      <div className="absolute inset-0 bg-gradient-to-r from-[#ff6b35] to-[#ff8555] rounded-2xl blur-md opacity-50 group-hover:opacity-75 transition-opacity"></div>
-      <div className="relative flex flex-col items-center bg-[#1a1a2e]/90 backdrop-blur-sm border border-[#ff6b35]/30 rounded-2xl p-6 min-w-[100px] md:min-w-[120px]">
-        <span className="text-4xl md:text-5xl font-black text-transparent bg-gradient-to-r from-[#ff6b35] to-[#ff8555] bg-clip-text">
+    <div className="relative group shadow-lg hover:shadow-xl transition-shadow duration-300">
+      <div className="absolute inset-0 bg-gradient-to-br from-[#ff6b35] via-[#ff8555] to-[#ffd6a5] rounded-2xl blur-md opacity-40 group-hover:opacity-70 transition-opacity"></div>
+      <div className="relative flex flex-col items-center bg-[#23234b]/90 backdrop-blur-md border border-[#ff6b35]/40 rounded-2xl p-6 min-w-[100px] md:min-w-[120px]">
+        <span className="text-5xl md:text-6xl font-extrabold text-transparent bg-gradient-to-br from-[#ff6b35] via-[#ff8555] to-[#ffd6a5] bg-clip-text drop-shadow-lg">
           {value.toString().padStart(2, '0')}
         </span>
-        <span className="text-sm md:text-base text-[#FFFFFF]/70 mt-2 font-semibold uppercase tracking-wider">{label}</span>
+        <span className="text-base md:text-lg text-[#FFFFFF]/80 mt-2 font-semibold uppercase tracking-wider letter-spacing-2">{label}</span>
       </div>
-    </motion.div>
+    </div>
   );
   return (
     <div className="flex justify-center gap-4 md:gap-6 flex-wrap">
