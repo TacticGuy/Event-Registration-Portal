@@ -12,8 +12,8 @@ export function Footer() {
         >
           <div className="flex items-center gap-3">
             <img
-              src="https://www.mozilla.org/media/protocol/img/logos/firefox/browser/logo.eb1324e44442.svg"
-              alt="Firefox Club"
+              src="https://www.mfcvit.in/assets/logo_main-DYyPMjX9.png"
+              alt="MFC VIT Logo"
               className="h-8 w-8"
             />
             <span className="text-[#FFFFFF] font-semibold">Firefox Club</span>
