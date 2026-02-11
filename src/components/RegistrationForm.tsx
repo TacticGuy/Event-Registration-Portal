@@ -96,16 +96,3 @@ export function RegistrationForm() {
       }, 2000);
     }
   };
-  const InputWithValidation = ({
-    name,
-    label,
-    type = 'text',
-    placeholder,
-    icon: Icon,
-  }: {
-    name: string;
-    label: string;
-    type?: string;
-    placeholder: string;
-    icon: any;
-  }) => null;
