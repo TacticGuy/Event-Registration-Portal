@@ -6,7 +6,6 @@ import { Button } from './ui/button';
 import { Checkbox } from './ui/checkbox';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from './ui/select';
 import { SuccessDialog } from './SuccessDialog';
-import { FormProgress } from './FormProgress';
 import { CheckCircle2, XCircle, User, Mail, Phone, Building2, BookOpen, Code2 } from 'lucide-react';
 export function RegistrationForm() {
   const [formData, setFormData] = useState({
@@ -304,7 +303,6 @@ export function RegistrationForm() {
         </motion.div>
       </div>
       <SuccessDialog open={showSuccess} onClose={() => setShowSuccess(false)} />
-      <FormProgress progress={calculateProgress()} />
     </section>
   );
 }
