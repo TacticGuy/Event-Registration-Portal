@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Calendar, MapPin, Users, Sparkles } from 'lucide-react';
+import { Calendar, MapPin, Users } from 'lucide-react';
 import { CountdownTimer } from './CountdownTimer';
 export function Hero() {
   return (
@@ -33,7 +33,6 @@ export function Hero() {
             transition={{ delay: 0.3, duration: 0.6 }}
             className="inline-flex items-center gap-2 px-4 py-2 bg-[#ff6b35]/10 border border-[#ff6b35]/30 rounded-full mb-6 backdrop-blur-sm"
           >
-            <Sparkles className="text-[#ff6b35]" size={16} />
           </motion.div>
           {/* Main heading */}
           <motion.h1
