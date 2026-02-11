@@ -34,7 +34,6 @@ export function Hero() {
             className="inline-flex items-center gap-2 px-4 py-2 bg-[#ff6b35]/10 border border-[#ff6b35]/30 rounded-full mb-6 backdrop-blur-sm"
           >
             <Sparkles className="text-[#ff6b35]" size={16} />
-            <span className="text-[#ff6b35] font-semibold text-sm">Annual Tech Event 2024</span>
           </motion.div>
           {/* Main heading */}
           <motion.h1
