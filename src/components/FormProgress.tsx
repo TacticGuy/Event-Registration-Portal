@@ -10,11 +10,9 @@ export function FormProgress({ progress }: FormProgressProps) {
         <span className="text-sm font-semibold text-[#ff6b35]">{progress}%</span>
       </div>
       <div className="h-2 bg-[#1a1a2e] rounded-full overflow-hidden">
-        <motion.div
-          initial={{ width: 0 }}
-          animate={{ width: `${progress}%` }}
-          transition={{ duration: 0.5, ease: 'easeOut' }}
-          className="h-full bg-gradient-to-r from-[#ff6b35] to-[#ff8555]"
+        <div
+          className="h-full bg-gradient-to-r from-[#ff6b35] to-[#ff8555] transition-all duration-300"
+          style={{ width: `${progress}%` }}
         />
       </div>
     </div>
