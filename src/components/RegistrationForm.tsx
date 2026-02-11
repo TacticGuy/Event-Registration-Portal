@@ -108,20 +108,4 @@ export function RegistrationForm() {
     type?: string;
     placeholder: string;
     icon: any;
-  }) => (
-    <div className="space-y-2">
-      <Label htmlFor={name} className="text-[#FFFFFF] font-semibold flex items-center gap-2">
-        <Icon size={16} className="text-[#ff6b35]" />
-        {label} <span className="text-[#ff6b35]">*</span>
-      </Label>
-      <div className="relative group">
-        <Input
-          id={name}
-          type={type}
-          placeholder={placeholder}
-          value={formData[name as keyof typeof formData] as string}
-          onChange={(e) => handleChange(name, e.target.value)}
-          onBlur={() => handleBlur(name)}
-          className={`bg-[#16213e]/50 border-[#ff6b35]/30 text-[#FFFFFF] placeholder:text-[#FFFFFF]/40 pl-4 pr-12 h-12 rounded-xl transition-all group-hover:border-[#ff6b35]/50 ${
-            touched[name] && errors[name] ? 'border-red-500 ring-2 ring-red-500/20' : touched[name] && !errors[name] ? 'border-green-500 ring-2 ring-green-500/20' : ''
-          }
+  }) => null;
