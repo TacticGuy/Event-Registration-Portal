@@ -69,7 +69,7 @@ export function Hero() {
               </div>
               <div className="text-left">
                 <p className="text-[#FFFFFF]/60 text-xs font-medium">Venue</p>
-                <p className="text-[#FFFFFF] text-lg font-bold">VIT Auditorium</p>
+                <p className="text-[#FFFFFF] text-lg font-bold">Anna Auditorium</p>
               </div>
             </div>
             <div className="flex items-center gap-3 px-6 py-3 bg-[#1a1a2e]/80 backdrop-blur-sm border border-[#ff6b35]/20 rounded-xl">
