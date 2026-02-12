@@ -26,14 +26,7 @@ export function Hero() {
           >
             {/* Removed Firefox logo */}
           </motion.div>
-          {/* Badge */}
-          <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3, duration: 0.6 }}
-            className="inline-flex items-center gap-2 px-4 py-2 bg-[#ff6b35]/10 border border-[#ff6b35]/30 rounded-full mb-6 backdrop-blur-sm"
-          >
-          </motion.div>
+          {/* Badge removed to eliminate stray box above heading */}
           {/* Main heading */}
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
