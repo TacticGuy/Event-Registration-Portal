@@ -4,32 +4,32 @@ A modern, interactive event registration website built with cutting-edge web tec
 
 ---
 
-## 🎯 Features
+## Features
 
-✨ **Modern Interactive Design**
+Modern Interactive Design
 - Responsive design that works on all devices (mobile, tablet, desktop)
 - Smooth scrolling and navigation
 - Interactive background with cursor-tracking text animations
 - Beautiful gradient effects and color schemes
 
-🎬 **Smooth Animations**
+Smooth Animations
 - Page transitions and element animations
 - Hover effects on buttons and cards
 - Animated countdown timer
 - Framer Motion powered interactions
 
-📱 **Event Registration**
+Event Registration
 - Simple and intuitive registration form
 - Form validation with error handling
 - Success notifications
 - Progress tracking for form completion
 
-⏱️ **Real-time Countdown**
+Real-time Countdown
 - Live countdown timer showing days, hours, minutes, seconds
 - No flickering or blinking effects
 - Smooth updates every second
 
-🎨 **Enhanced UX**
+Enhanced UX
 - Interactive background words that glow when cursor approaches
 - Contact information section
 - Event schedule with detailed timeline
@@ -37,7 +37,7 @@ A modern, interactive event registration website built with cutting-edge web tec
 
 ---
 
-## 💻 Tech Stack
+## Tech Stack
 
 ### Frontend Framework & Language
 - **React 18** - Modern UI library for building interactive components
@@ -69,7 +69,7 @@ A modern, interactive event registration website built with cutting-edge web tec
 
 ---
 
-## 📦 Project Structure
+## Project Structure
 
 ```
 Event-Registration/
@@ -115,7 +115,7 @@ Event-Registration/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - **Node.js** (v16 or higher)
@@ -151,7 +151,7 @@ Event-Registration/
 
 ---
 
-## 🎨 Key Components Overview
+## Key Components Overview
 
 ### Header Component
 - Sticky navigation with smooth scroll to sections
@@ -190,7 +190,7 @@ Event-Registration/
 
 ---
 
-## 🎯 Custom Features
+## Custom Features
 
 ### Cursor-Tracking Text Animation
 The `InteractiveBackground` component tracks cursor movement and makes nearby words glow. Words like "Build", "Create", "Innovate", etc. become illuminated as you move your cursor near them.
@@ -211,7 +211,7 @@ Updates every second without flickering or visual artifacts. Each time unit (day
 
 ---
 
-## 📚 Dependencies
+## Dependencies
 
 ### Main Dependencies
 ```json
@@ -233,19 +233,9 @@ Updates every second without flickering or visual artifacts. Each time unit (day
 
 ---
 
-## 🎓 Learning Resources
 
-New to any of these technologies? Here are some helpful resources:
 
-- **React**: https://react.dev
-- **TypeScript**: https://www.typescriptlang.org/docs
-- **Tailwind CSS**: https://tailwindcss.com/docs
-- **Framer Motion**: https://www.framer.com/motion
-- **Vite**: https://vitejs.dev
-
----
-
-## 🔧 Configuration Files Explained
+## Configuration Files Explained
 
 ### `vite.config.ts`
 Configures the Vite build tool with React plugin and optimization settings.
@@ -261,73 +251,12 @@ Lists all project dependencies and npm scripts for development and production.
 
 ---
 
-## 🌐 Deployment
+## Deployment
 
-The project can be deployed to any static hosting platform:
+Deployed in **Vercel**
 
-- **Vercel** (Recommended for Vite projects)
-- **Netlify**
-- **GitHub Pages**
-- **Firebase Hosting**
-
-Simply run `npm run build` and deploy the `dist/` folder.
+**Webpage**: https://event-registration-portal-beige.vercel.app/
 
 ---
 
-## 💡 Tips & Best Practices
-
-1. **Hot Module Replacement (HMR)** - Changes reflect instantly in development
-2. **Component Reusability** - Smaller components are easier to test and maintain
-3. **Tailwind Classes** - Use Tailwind's utility classes instead of custom CSS when possible
-4. **Framer Motion** - Use for complex animations; avoid over-animating for better performance
-5. **TypeScript** - Enable strict mode to catch errors early
-
----
-
-## 📝 Browser Support
-
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-
----
-
-## 🤝 Contributing
-
-Suggestions for improvements? Feel free to:
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to the branch
-5. Open a pull request
-
----
-
-## 📄 License
-
-This project is open source and available under the MIT License.
-
----
-
-## 🎉 What's Included
-
-✅ Fully responsive design  
-✅ Modern animations and transitions  
-✅ Form validation and error handling  
-✅ Real-time countdown timer  
-✅ Interactive cursor-tracking effects  
-✅ Mobile-optimized navigation  
-✅ Professional UI/UX design  
-✅ Type-safe TypeScript codebase  
-✅ Scalable component architecture  
-
----
-
-## 📞 Support
-
-For issues or questions, please check the component files or reach out through the contact information on the website.
-
----
-
-**Made with ❤️ for TechFest 2026**
+**Made with ❤ for Mozilla FireFox Club**
