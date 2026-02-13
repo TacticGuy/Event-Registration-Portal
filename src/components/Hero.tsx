@@ -36,7 +36,7 @@ export function Hero() {
           >
             Tech<span className="bg-gradient-to-r from-[#ff6b35] via-[#ff8555] to-[#ff6b35] bg-clip-text text-transparent animate-text-glow">Fest</span>
             <br />
-            <span className="text-5xl md:text-7xl bg-gradient-to-r from-[#6366f1] to-[#ff6b35] bg-clip-text text-transparent">2024</span>
+            <span className="text-5xl md:text-7xl bg-gradient-to-r from-[#6366f1] to-[#ff6b35] bg-clip-text text-transparent">2026</span>
           </motion.h1>
           {/* Subtitle */}
           <motion.p
@@ -60,7 +60,7 @@ export function Hero() {
               </div>
               <div className="text-left">
                 <p className="text-[#FFFFFF]/60 text-xs font-medium">Date</p>
-                <p className="text-[#FFFFFF] text-lg font-bold">March 15, 2024</p>
+                <p className="text-[#FFFFFF] text-lg font-bold">March 15, 2026</p>
               </div>
             </div>
             <div className="flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-[#1a1a2e]/80 to-[#1a1a2e]/60 backdrop-blur-md border border-[#6366f1]/30 rounded-xl hover:border-[#6366f1]/60 hover:shadow-lg hover:shadow-[#6366f1]/20 transition-all duration-300">

@@ -57,7 +57,7 @@ export function SuccessDialog({ open, onClose }: SuccessDialogProps) {
                 transition={{ delay: 0.4 }}
                 className="text-[#FFFFFF]/70 text-center mb-6 leading-relaxed"
               >
-                Thank you for registering for TechFest 2024. We've sent a confirmation email with all the event details.
+                Thank you for registering for TechFest 2026. We've sent a confirmation email with all the event details.
               </motion.p>
               <motion.button
                 initial={{ opacity: 0, y: 10 }}

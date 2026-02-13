@@ -4,6 +4,7 @@ import { EventDetails } from './components/EventDetails';
 import { RegistrationForm } from './components/RegistrationForm';
 import { ContactInfo } from './components/ContactInfo';
 import { Footer } from './components/Footer';
+import { InteractiveBackground } from './components/InteractiveBackground';
 import './globals.css';
 function App() {
   return (
@@ -14,6 +15,9 @@ function App() {
         <div className="absolute top-1/2 right-0 w-96 h-96 bg-gradient-to-l from-[#6366f1]/10 to-transparent rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-96 h-96 bg-gradient-to-t from-[#ff8555]/10 to-transparent rounded-full blur-3xl"></div>
       </div>
+      
+      {/* Interactive Background */}
+      <InteractiveBackground />
       
       <Header />
       <Hero />

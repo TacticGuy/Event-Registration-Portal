@@ -43,7 +43,7 @@ export function Footer() {
             className="text-center"
           >
             <p className="text-[#FFFFFF]/70 text-sm font-medium">
-              © 2024 Mozilla FireFox Club<br />All rights reserved.
+              © 2026 Mozilla FireFox Club<br />All rights reserved.
             </p>
           </motion.div>
 
