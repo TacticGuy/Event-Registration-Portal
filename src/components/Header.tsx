@@ -41,12 +41,12 @@ export function Header() {
               <img
                 src="https://www.mfcvit.in/assets/logo_main-DYyPMjX9.png"
                 alt="MFC VIT Logo"
-                className="h-12 w-12 animate-float"
+                className="h-12 w-12"
               />
               <div className="absolute inset-0 bg-[#ff6b35]/20 rounded-full blur-xl"></div>
             </div>
             <div>
-              <span className="text-[#FFFFFF] text-2xl font-bold block">Firefox Club</span>
+              <span className="text-[#FFFFFF] text-2xl font-bold block">Mozilla FireFox Club</span>
               <span className="text-[#ff6b35] text-xs font-medium">VIT University</span>
             </div>
           </motion.div>

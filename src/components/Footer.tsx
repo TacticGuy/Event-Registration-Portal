@@ -16,10 +16,10 @@ export function Footer() {
               alt="MFC VIT Logo"
               className="h-8 w-8"
             />
-            <span className="text-[#FFFFFF] font-semibold">Firefox Club</span>
+            <span className="text-[#FFFFFF] font-semibold">Mozilla FireFox Club</span>
           </div>
           <p className="text-[#FFFFFF]/60 text-sm text-center">
-            © 2024 Firefox Club. All rights reserved.
+            © 2024 Mozilla FireFox Club. All rights reserved.
           </p>
           <div className="flex gap-6">
             <a href="#" className="text-[#FFFFFF]/60 hover:text-[#ff6b35] transition-colors text-sm cursor-pointer">
