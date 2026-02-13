@@ -131,7 +131,7 @@ export function EventDetails() {
             <h3 className="text-3xl md:text-4xl font-black text-[#FFFFFF] mb-8">Event <span className="text-[#ff6b35]">Schedule</span></h3>
             <div className="space-y-6">
               {[
-                { time: '9:00 AM', event: 'Registration & Breakfast', type: 'arrival' },
+                { time: '9:00 AM', event: 'Registration & ID Scanning', type: 'arrival' },
                 { time: '10:00 AM', event: 'Opening Ceremony & Keynote', type: 'keynote' },
                 { time: '11:00 AM', event: 'Technical Workshop Session 1', type: 'workshop' },
                 { time: '1:00 PM', event: 'Lunch Break & Networking', type: 'break' },
