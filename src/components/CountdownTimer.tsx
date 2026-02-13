@@ -27,15 +27,24 @@ export function CountdownTimer({ targetDate }: CountdownTimerProps) {
     return () => clearInterval(timer);
   }, [targetDate]);
   const TimeBox = ({ value, label }: { value: number; label: string }) => (
-    <div className="relative group shadow-lg hover:shadow-xl transition-shadow duration-300">
-      <div className="absolute inset-0 bg-gradient-to-br from-[#ff6b35] via-[#ff8555] to-[#ffd6a5] rounded-2xl blur-md opacity-40 group-hover:opacity-70 transition-opacity"></div>
-      <div className="relative flex flex-col items-center bg-[#23234b]/90 backdrop-blur-md border border-[#ff6b35]/40 rounded-2xl p-6 min-w-[100px] md:min-w-[120px]">
-        <span className="text-5xl md:text-6xl font-extrabold text-transparent bg-gradient-to-br from-[#ff6b35] via-[#ff8555] to-[#ffd6a5] bg-clip-text drop-shadow-lg">
+    <motion.div
+      initial={{ opacity: 0, scale: 0.8 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.4 }}
+      viewport={{ once: true }}
+      className="relative group"
+    >
+      <div className="absolute inset-0 bg-gradient-to-br from-[#ff6b35] via-[#ff8555] to-[#6366f1] rounded-2xl blur-lg opacity-40 group-hover:opacity-70 transition-opacity duration-300"></div>
+      <motion.div
+        whileHover={{ y: -8, scale: 1.05 }}
+        className="relative flex flex-col items-center bg-gradient-to-br from-[#1a1a2e] via-[#16213e] to-[#0F1729] backdrop-blur-md border border-[#ff6b35]/50 hover:border-[#ff6b35] rounded-2xl p-6 min-w-[110px] md:min-w-[140px] shadow-lg shadow-[#ff6b35]/20 group-hover:shadow-[#ff6b35]/40 transition-all duration-300"
+      >
+        <span className="text-5xl md:text-6xl font-black text-transparent bg-gradient-to-r from-[#ff6b35] via-[#ff8555] to-[#ff6b35] bg-clip-text animate-text-glow">
           {value.toString().padStart(2, '0')}
         </span>
-        <span className="text-base md:text-lg text-[#FFFFFF]/80 mt-2 font-semibold uppercase tracking-wider letter-spacing-2">{label}</span>
-      </div>
-    </div>
+        <span className="text-xs md:text-sm text-[#FFFFFF]/80 mt-3 font-bold uppercase tracking-widest">{label}</span>
+      </motion.div>
+    </motion.div>
   );
   return (
     <div className="flex justify-center gap-4 md:gap-6 flex-wrap">

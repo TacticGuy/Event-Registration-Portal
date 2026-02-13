@@ -50,14 +50,14 @@ export function ContactInfo() {
             viewport={{ once: true }}
             className="inline-block mb-4"
           >
-            <span className="px-4 py-2 bg-[#ff6b35]/10 border border-[#ff6b35]/30 rounded-full text-[#ff6b35] text-sm font-semibold">
+            <span className="px-4 py-2 bg-gradient-to-r from-[#ff6b35]/20 to-[#6366f1]/20 border border-[#ff6b35]/50 rounded-full text-transparent bg-clip-text font-bold text-sm uppercase tracking-wider">
               Get Connected
             </span>
           </motion.div>
           <h2 className="text-5xl md:text-6xl font-black text-[#FFFFFF] mb-6">
-            Get in <span className="bg-gradient-to-r from-[#ff6b35] to-[#ff8555] bg-clip-text text-transparent">Touch</span>
+            Get in <span className="bg-gradient-to-r from-[#ff6b35] via-[#ff8555] to-[#6366f1] bg-clip-text text-transparent">Touch</span>
           </h2>
-          <p className="text-xl text-[#FFFFFF]/70 max-w-2xl mx-auto font-light">
+          <p className="text-xl text-[#FFFFFF]/70 max-w-2xl mx-auto font-light leading-relaxed">
             Have questions? We're here to help. Reach out to us anytime.
           </p>
         </motion.div>
@@ -70,18 +70,18 @@ export function ContactInfo() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              whileHover={{ y: -10, scale: 1.02 }}
+              whileHover={{ y: -15, scale: 1.05 }}
               className="group relative cursor-pointer"
             >
-              <div className={`absolute inset-0 bg-gradient-to-br ${contact.color} rounded-2xl blur-xl opacity-20 group-hover:opacity-40 transition-opacity`}></div>
-              <div className="relative bg-[#1a1a2e]/80 backdrop-blur-sm border border-[#ff6b35]/20 rounded-2xl p-8 text-center group-hover:border-[#ff6b35]/50 transition-all">
-                <div className={`inline-flex p-4 bg-gradient-to-br ${contact.color} rounded-xl mb-4 text-white`}>
+              <div className={`absolute inset-0 bg-gradient-to-br ${contact.color} rounded-2xl blur-2xl opacity-20 group-hover:opacity-50 transition-opacity duration-300`}></div>
+              <div className="relative bg-gradient-to-br from-[#1a1a2e] via-[#16213e] to-[#0F1729] backdrop-blur-md border border-[#ff6b35]/30 hover:border-[#ff6b35]/60 rounded-2xl p-8 text-center group-hover:shadow-2xl group-hover:shadow-[#ff6b35]/20 transition-all duration-300">
+                <div className={`inline-flex p-4 bg-gradient-to-br ${contact.color} rounded-xl mb-4 text-white shadow-lg`}>
                   {contact.icon}
                 </div>
-                <h3 className="text-xl font-bold text-[#FFFFFF] mb-2">
+                <h3 className="text-2xl font-bold text-[#FFFFFF] mb-3">
                   {contact.title}
                 </h3>
-                <p className="text-[#FFFFFF]/70">{contact.value}</p>
+                <p className="text-[#FFFFFF]/70 font-medium">{contact.value}</p>
               </div>
             </motion.a>
           ))}
@@ -91,10 +91,11 @@ export function ContactInfo() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
           viewport={{ once: true }}
-          className="text-center"
+          className="text-center bg-gradient-to-r from-[#1a1a2e]/60 to-[#16213e]/60 backdrop-blur-md border border-[#ff6b35]/30 rounded-3xl p-12"
         >
-          <h3 className="text-2xl font-bold text-[#FFFFFF] mb-8">Follow Us on Social Media</h3>
-          <div className="flex justify-center gap-4">
+          <h3 className="text-3xl font-black text-[#FFFFFF] mb-2">Follow Us</h3>
+          <p className="text-[#FFFFFF]/60 mb-8 font-medium">Stay connected for updates and announcements</p>
+          <div className="flex justify-center gap-6 flex-wrap">
             {socials.map((social, index) => (
               <motion.a
                 key={index}
@@ -103,9 +104,9 @@ export function ContactInfo() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: 0.4 + index * 0.1 }}
                 viewport={{ once: true }}
-                whileHover={{ scale: 1.15, y: -5 }}
-                whileTap={{ scale: 0.95 }}
-                className={`bg-[#1a1a2e]/80 border border-[#ff6b35]/30 rounded-full p-4 text-[#ff6b35] ${social.color} transition-all cursor-pointer hover:border-[#ff6b35]/60 hover:shadow-lg`}
+                whileHover={{ scale: 1.20, y: -8, boxShadow: '0 0 30px rgba(255, 107, 53, 0.6)' }}
+                whileTap={{ scale: 0.9 }}
+                className={`bg-gradient-to-br from-[#1a1a2e] to-[#16213e] border border-[#ff6b35]/40 hover:border-[#ff6b35]/70 rounded-full p-4 text-[#ff6b35] ${social.color} transition-all cursor-pointer shadow-lg shadow-[#ff6b35]/20 hover:shadow-[#ff6b35]/40`}
                 aria-label={social.name}
               >
                 {social.icon}
